@@ -9,7 +9,9 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "test": "mocha --exit test/**/*.js documentation/**/*.md",
+    "mongo": "docker-compose exec mongo echo 'mongo running ...' || docker-compose up -d",
+    "mongo:stop": "docker-compose stop",    
+    "test": "mocha test/**/*.js documentation/**/*.md",
     "coverage": "nyc npm test",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "generate-site": "generate-site --require ./bootstrap-unexpected-markdown.js",
