@@ -1,0 +1,63 @@
+{
+  "name": "unexpected-mongoose",
+  "version": "1.0.0",
+  "description": "Unexpected plugin for Mongoose",
+  "main": "lib/unexpected-mongoose.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "test": "mocha --exit test/**/*.js documentation/**/*.md",
+    "coverage": "nyc npm test",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "generate-site": "generate-site --require ./bootstrap-unexpected-markdown.js",
+    "update-examples": "generate-site --require ./bootstrap-unexpected-markdown.js --update-examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelmukuthu/unexpected-mongoose.git"
+  },
+  "keywords": [
+    "test",
+    "testing",
+    "unexpected",
+    "mongoose",
+    "mongoose.js"
+  ],
+  "author": {
+    "name": "Joel Mukuthu",
+    "email": "joelmukuthu@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Joel Mukuthu",
+      "email": "joelmukuthu@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joelmukuthu/unexpected-mongoose/issues"
+  },
+  "homepage": "https://github.com/joelmukuthu/unexpected-mongoose",
+  "dependencies": {
+    "mongoose": "^5.0.5"
+  },
+  "peerDependencies": {
+    "mongoose": "5",
+    "unexpected": "10"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.0",
+    "eslint": "^4.17.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "mocha": "^2.3.3",
+    "nyc": "^11.4.1",
+    "prettier": "^1.10.2",
+    "unexpected": "^10.37.2",
+    "unexpected-documentation-site-generator": "^4.6.1",
+    "unexpected-markdown": "^1.7.4"
+  }
+}

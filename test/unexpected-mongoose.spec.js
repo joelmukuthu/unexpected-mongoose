@@ -1,0 +1,2 @@
+describe('unexpected-mongoose', function() {
+});
