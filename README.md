@@ -1,5 +1,7 @@
 # unexpected-mongoose
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/joelmukuthu/unexpected-mongoose.svg)](https://greenkeeper.io/)
+
 Unexpected plugin for [Mongoose](http://mongoosejs.com/)
 
 [![NPM version](https://badge.fury.io/js/unexpected-mongoose.svg)](http://badge.fury.io/js/unexpected-mongoose)
