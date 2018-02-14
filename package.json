@@ -43,9 +43,6 @@
     "url": "https://github.com/joelmukuthu/unexpected-mongoose/issues"
   },
   "homepage": "https://github.com/joelmukuthu/unexpected-mongoose",
-  "dependencies": {
-    "mongoose": "^5.0.5"
-  },
   "peerDependencies": {
     "mongoose": "5",
     "unexpected": "10"
@@ -56,6 +53,7 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
     "mocha": "^2.3.3",
+    "mongoose": "^5.0.5",
     "nyc": "^11.4.1",
     "prettier": "^1.10.2",
     "unexpected": "^10.37.2",
